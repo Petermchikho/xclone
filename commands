@@ -1,0 +1,11 @@
+npm init -y
+npm install @clerk/express@1.7.0 @arcjet/node@1.0.0-beta.8 @arcjet/inspect@1.0.0-beta.8 
+npx create-expo-app@latest .
+
+removing git folder
+rm -rf .git
+
+clerk.com
+https://clerk.com/docs/expressjs/getting-started/quickstart
+https://arcjet.com/
+https://cloudinary.com/
