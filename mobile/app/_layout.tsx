@@ -1,16 +1,22 @@
+import { ClerkProvider } from '@clerk/clerk-expo'
 import { Stack } from "expo-router";
+import { tokenCache } from '@clerk/clerk-expo/token-cache'
 import "../global.css"
 
 export default function RootLayout() {
   return (
-    <Stack 
-    screenOptions={{headerShown:false}}
-    >
-      <Stack.Screen 
-      name="index" 
-      />
+    <ClerkProvider tokenCache={tokenCache}>
+      <Stack 
+      // screenOptions={{headerShown:false}}
+      >
+        <Stack.Screen 
+        name="(auth)" 
+        options={{headerShown:false}}
+        />
 
-    </Stack>
+      </Stack>
+    </ClerkProvider>
+    
   )
 
 }
