@@ -10,3 +10,6 @@ clerk.com
 https://clerk.com/docs/expressjs/getting-started/quickstart
 https://arcjet.com/
 https://cloudinary.com/
+
+
+npm run reset-project
